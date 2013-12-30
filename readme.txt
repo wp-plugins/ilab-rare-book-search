@@ -25,10 +25,6 @@ This search utility is sponsored by the International League of Antiquarian Book
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. You can download and install this plugin using the built in WordPress plugin installer. If you download it manually, make sure it is uploaded to "/wp-content/plugins/ilab-plugin/".
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 1. Add the search widget to your sidebar or footer using the 'Appearance' -> 'Widgets' menu.
