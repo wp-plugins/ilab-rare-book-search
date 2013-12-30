@@ -31,7 +31,7 @@ echo $before_title
 		<div class="ilab-field"><input name="ilab-title" placeholder="Title" /></div>
 		<div class="ilab-field"><input name="ilab-keywords" placeholder="Keywords" /></div>
 		<input type="submit" value="Search" />
-		<img src="<?php echo plugins_url(); ?>/vialibri-ilab-plugin/logo-ilab-eng.png"/>
+		<img src="<?php echo plugins_url(); ?>/ilab-rare-book-search/logo-ilab-eng.png"/>
 	</form>
 <?php
 echo $after_widget;

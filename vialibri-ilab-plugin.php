@@ -3,7 +3,7 @@
 Plugin Name: ILAB Rare Book Search
 Plugin URI: http://www.vldhs.com/ILAB/search_plugin_description.php
 Description: Search for old and rare books for sale by the world's foremost antiquarian booksellers.
-Version: 1.0
+Version: 1.0.1
 Author: viaLibri
 Author URI: http://www.vialibri.net/
 License: GPL2
@@ -34,7 +34,7 @@ class ViaLibri_ILAB_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'vialibri_ilab_widget', // Base ID
-			'viaLibri ILAB Search', // Name
+			'ILAB Rare Book Search', // Name
 			array( 'description' => __( "Search the world's rare books from your sidebar", 'text_domain' ), ) // Args
 		);
 	}
@@ -151,15 +151,16 @@ add_filter("the_content", "vialibri_ilab_result_page_content");
 function vialibri_ilab_page_scripts() {
 	global $wp_query;
 	$post_id = $wp_query->post->ID;
+	$plugin_url = plugins_url().'/ilab-rare-book-search/';
 
 	wp_enqueue_script('jquery');
-	wp_enqueue_script('jquery.placeholder', plugins_url().'/vialibri-ilab-plugin/jquery.placeholder.min.js', array('jquery'), '1.0.0', true);
-	wp_enqueue_script('vialibri_run_placeholder', plugins_url().'/vialibri-ilab-plugin/run-placeholder.js', array('jquery', 'jquery.placeholder'), '1.0.0', true);
+	wp_enqueue_script('jquery.placeholder', $plugin_url.'jquery.placeholder.min.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('vialibri_run_placeholder', $plugin_url.'run-placeholder.js', array('jquery', 'jquery.placeholder'), '1.0.0', true);
 
 	if ($post_id == get_option('vialibri_ilab_page_id')) {
-		wp_enqueue_script('jquery.shorten', plugins_url().'/vialibri-ilab-plugin/jquery.shorten.js', array('jquery'), '1.0.0', true);
-		wp_enqueue_script('vialibri_ilab_js', plugins_url().'/vialibri-ilab-plugin/results.js', array('jquery', 'jquery.shorten'), '1.0.0', true);
-		wp_enqueue_style('vialibri_ilab_css', plugins_url().'/vialibri-ilab-plugin/results.css');
+		wp_enqueue_script('jquery.shorten', $plugin_url.'jquery.shorten.js', array('jquery'), '1.0.0', true);
+		wp_enqueue_script('vialibri_ilab_js', $plugin_url.'results.js', array('jquery', 'jquery.shorten'), '1.0.0', true);
+		wp_enqueue_style('vialibri_ilab_css', $plugin_url.'results.css');
 	}
 }
 add_action('wp_enqueue_scripts', 'vialibri_ilab_page_scripts');
