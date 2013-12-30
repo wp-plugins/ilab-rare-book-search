@@ -1,0 +1,154 @@
+.ilab-criteria, .ilab-left, #ilab-advanced-search {
+	background-color: #FAF3E9;
+	border-radius: 5px;
+}
+
+.ilab-left, .ilab-right, .ilab-criteria, #ilab-advanced-search {
+	padding: 15px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ilab-criteria {
+	margin-bottom: 1em;
+}
+
+.ilab-criteria ul {
+	margin-bottom: 1em !important;
+}
+
+.ilab-header {
+	font-weight: bold;
+}
+
+.ilab-result-count {
+	margin-top: 0.5em;
+}
+
+.ilab-result-count + .ilab-pager {
+	margin-top: 0;
+}
+
+.ilab-pager {
+	margin: 0.5em 0;
+}
+
+.ilab-result-count + .ilab-results {
+	margin-top: 0.5em;
+}
+
+.ilab-pager a {
+	margin: 5px;
+	display: inline-block;
+}
+
+.ilab-pager a.selected {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.ilab-result {
+	border: 1px solid #777;
+	border-radius: 5px;
+	padding: 7px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.ilab-author {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #777;
+}
+
+.ilab-title {
+	font-size: 110%;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.ilab-left {
+	float: left;
+	width: 70%;
+}
+
+.ilab-right {
+	float: left;
+	width: 30%;
+}
+
+.ilab-actual-price {
+	font-weight: bold;
+}
+
+.ilab-price {
+	margin-top: 2em;
+}
+
+.ilab-thumbnail {
+	height: 150px; /* We can't use max-height here as it doesn't work on non-Webkit browsers. We set the height in JS instead. */
+	margin-bottom: 1em;
+	text-align: center;
+	margin-top: -15px;
+}
+
+.ilab-thumbnail img {
+	max-height: 100%;
+	box-shadow: none !important; /* override some themeing */
+}
+
+.ilab-bookseller {
+	font-weight: bold;
+}
+
+.ilab-buy-list {
+	margin-top: 1em;
+}
+
+.ilab-buy-list ul {
+	padding-left: 20px;
+	margin-left: 0;
+}
+
+.ilab-buy-list li {
+	margin-left: 0 !important;
+}
+
+div.ilab-advanced-search-form {
+	display: table;
+	font-size: 13px;
+	margin-top: 0.5em;
+}
+
+.ilab-control-row {
+	display: table-row;
+}
+
+.ilab-control-group {
+	display: table-cell;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.ilab-control-group label {
+	padding-right: 5px;
+	padding-left: 10px;
+}
+
+.ilab-controls {
+	display: inline;
+}
+
+.ilab-controls .ilab-smaller {
+	width: 4em;
+}
+
+.ilab-advanced-search-controls {
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.ilab-advanced-search-controls input {
+	margin: 0 20px;
+}
