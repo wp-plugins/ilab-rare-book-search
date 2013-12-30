@@ -1,6 +1,6 @@
 === ILAB Rare Book Search ===
 Contributors: alnorth29, vialibrian
-Tags: comments, spam
+Tags: widget, plugin, search
 Requires at least: 3.2
 Tested up to: 3.8
 Stable tag: trunk
