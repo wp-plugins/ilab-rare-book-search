@@ -1,7 +1,7 @@
 <?php
 echo $before_widget;
 echo $before_title
-	. 'Find books for sale from the world\'s leading antiquarian booksellers'
+	. 'Find Old and Rare Books'
 	. $after_title;
 ?>
 	<style type="text/css">
