@@ -3,7 +3,7 @@
 Plugin Name: ILAB Rare Book Search
 Plugin URI: http://www.vldhs.com/ILAB/search_plugin_description.php
 Description: Search for old and rare books for sale by the world's foremost antiquarian booksellers.
-Version: 1.0.2
+Version: 1.0.1
 Author: viaLibri
 Author URI: http://www.vialibri.net/
 License: GPL2
